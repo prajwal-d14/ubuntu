@@ -23,7 +23,8 @@ pipeline {
 					sh '''
 						cd /home/ubuntu/git-backup-audit
 
-						git add * && git commit -m " added logs and archive"
+						git add *  
+						git commit -m "added logs and archive"
 
 						git push origin main
 						'''
