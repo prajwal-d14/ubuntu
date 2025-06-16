@@ -21,7 +21,7 @@ pipeline {
 				agent {label 'compile'}
 				steps{
 					sh '''
-						cd /home/ec2-user/git-backup-audit
+						cd /home/ubuntu/git-backup-audit
 
 						git add * $$ git commmit -m " added logs and archive"
 
