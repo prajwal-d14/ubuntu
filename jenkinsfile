@@ -13,7 +13,7 @@ pipeline {
 				steps{
 					sh '''
 						backup_and_audit.sh
-						'''
+					'''
 
 				}
 			}
@@ -23,7 +23,7 @@ pipeline {
 					sh '''
 						cd /home/ubuntu/git-backup-audit
 
-						git add * $$ git commmit -m " added logs and archive"
+						git add * $$ git commit -m " added logs and archive"
 
 						git push origin main
 						'''
