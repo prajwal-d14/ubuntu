@@ -10,7 +10,6 @@ while IFS= read -r repo; do
 	fi
 
 	reponame=$(echo "$repo" | awk -F "/" '{print $NF}' | awk -F "." '{print $1}')
-)
 
 if [ -d "$reponame" ]; then
 
